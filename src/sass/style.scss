@@ -1,0 +1,37 @@
+@import 'libs/bootstrap-reboot.min';
+
+// @import 'base/animations';
+@import 'base/variables';
+
+@import 'fonts/fonts';
+
+* {
+    font-family: 'SF Pro Text', sans-serif;
+    margin: 0;
+    padding: 0;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+@import 'common/title';
+@import 'common/text';
+@import 'common/btn';
+
+
+@import 'blocks/promo';
+@import 'blocks/header';
+
+// @import 'blocks/media';

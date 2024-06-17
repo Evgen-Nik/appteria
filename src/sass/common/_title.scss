@@ -1,0 +1,9 @@
+.title  {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: px-to-rem(102px);
+    line-height: px-to-rem(102px);
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--white, rgba(255, 255, 255, 1));
+}

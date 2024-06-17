@@ -1,0 +1,10 @@
+.text {
+    font-weight: 400;
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(19.2px);
+    color: var(--white, rgba(255, 255, 255, 1));
+    &_fz20 {
+        font-size: px-to-rem(20px);
+        line-height: px-to-rem(28px);
+    }
+}

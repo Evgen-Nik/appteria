@@ -1,0 +1,57 @@
+.btn {
+    background: var(--white, rgba(255, 255, 255, 1));
+    padding: px-to-rem(17px) px-to-rem(40px);
+    border-radius: px-to-rem(98px);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--white, rgba(255, 255, 255, 1));
+    display: block;
+    font-weight: 500;
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(19.2px);
+    color: var(--black, rgba(0, 0, 0, 1));
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s;
+    &:hover {
+        color: var(--white, rgba(255, 255, 255, 1));
+        background: var(--black, rgba(0, 0, 0, 1));
+        border-color: var(--black, rgba(0, 0, 0, 1));
+    }
+    &:focus {
+        color: var(--white, rgba(255, 255, 255, 1));
+        background: var(--grey29, rgba(29, 29, 29, 1));
+        border-color: var(--grey29, rgba(29, 29, 29, 1));
+        box-shadow: 0 0 1px 5px var(--grey120_61, rgba(120, 120, 120, 0.61));
+    }
+    &:disabled {
+        color: var(--grey114, rgba(114, 114, 114, 1));
+        background: var(--grey195, rgba(195, 195, 195, 1));
+        border-color: var(--grey195, rgba(195, 195, 195, 1));
+    }
+    &_border {
+        background: none;
+        color: var(--white, rgba(255, 255, 255, 1));
+        &:hover {
+            color: var(--grey29, rgba(29, 29, 29, 1));
+            background: var(--white, rgba(255, 255, 255, 1));
+            border-color: var(--white, rgba(255, 255, 255, 1));
+        }
+        &:focus {
+            color: var(--grey29, rgba(29, 29, 29, 1));
+            background: var(--white, rgba(255, 255, 255, 1));
+            border-color: var(--white, rgba(255, 255, 255, 1));
+            box-shadow: 0 0 1px 5px var(--grey255_49, rgba(255, 255, 255, 0.49));
+        }
+        &:disabled {
+            color: var(--grey114, rgba(114, 114, 114, 1));
+            background: var(--grey195, rgba(195, 195, 195, 1));
+            border-color: var(--grey195, rgba(195, 195, 195, 1));
+        }
+    }
+    &_small {
+        padding: px-to-rem(10px) px-to-rem(40px);
+        border-radius: px-to-rem(67px);
+        font-weight: 400;
+    }    
+}

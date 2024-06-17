@@ -1,0 +1,44 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    &__wrapper {
+        margin-top: px-to-rem(20px);
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.navbar {
+    padding-top: px-to-rem(10.5px);
+    &__list {
+        display: flex;
+        justify-content: start;
+        gap: px-to-rem(46px);
+    }
+    &__item {
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s;
+        &:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: -2px;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 50%;
+            position: absolute;
+            background: var(--white, rgba(255, 255, 255, 1));
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+        &:hover {
+            color: var(--white, rgba(255, 255, 255, 1));
+            text-decoration: none;
+            &:after {
+                width: 100%; 
+                left: 0; 
+            }
+        }
+    }
+}
